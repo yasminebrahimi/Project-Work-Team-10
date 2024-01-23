@@ -1,0 +1,57 @@
+/* Resetting some default styles */
+body, h1, h2, h3, p, margin, padding {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+
+  .main-footer {
+    background-color: #FFD099; 
+    color: #333; 
+    min-height: 250px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+  }
+  
+
+
+  .textFooter {
+    flex: 2; 
+  }
+  
+  .getInTouch,
+  .links {
+    flex: 1; 
+  }
+  
+  
+  h4, h6 {
+    color: #333; 
+  }
+.hyperLinks{
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin: 5% auto;
+  }
+  
+a{
+    color: #333;
+}
+
+.cta{
+    margin-top: 3%;
+}
+
+
+
+  a:hover {
+    color: #FF6C22;
+  }
+  
