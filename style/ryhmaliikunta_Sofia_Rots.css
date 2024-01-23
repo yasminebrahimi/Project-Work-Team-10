@@ -111,42 +111,42 @@ h4{
 
 }
 
+
 header{
-     color: aliceblue;
+    color: aliceblue;
     background-color: #ff6c22;
     font-size: 30px;
     text-decoration: dotted;
-    padding: 0.5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-
     
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ 
  }
  
- header img {
+ img {
     float: left;
     width: 200px;
     height: auto;
     padding: 10px;
     
   }
-
-
+ 
+ 
  nav ul{
     display: flex;
-    justify-content: space-evenly;
  }
-
+ 
  ul li{
  display: inline-block;
  width: 100%;
  border: 1px solid #333;
- padding: 30px;
  text-align: center;
+ padding: 20px;
  margin: 60px;
+ 
  background-color: #2b3499;
  border-radius: 10px;
  }
-
+ 
  ul select{
  display: inline-block;
  width: 100%;
@@ -161,4 +161,3 @@ header{
  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
  }
  
-

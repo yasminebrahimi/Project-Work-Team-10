@@ -1,48 +1,48 @@
 header{
-    color: aliceblue;
-    background-color: #ff6c22;
-    font-size: 30px;
-    text-decoration: dotted;
-    padding: 0.5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   color: aliceblue;
+   background-color: #ff6c22;
+   font-size: 30px;
+   text-decoration: dotted;
+   
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 
- }
- 
- img {
-    float: left;
-    width: 200px;
-    height: auto;
-    padding: 10px;
-    
-  }
+}
 
-
- nav ul{
-    display: flex;
+img {
+   float: left;
+   width: 200px;
+   height: auto;
+   padding: 10px;
+   
  }
 
- ul li{
- display: inline-block;
- width: 100%;
- border: 1px solid #333;
- padding: 30px;
- text-align: center;
- margin: 60px;
- background-color: #2b3499;
- border-radius: 10px;
- }
 
- ul select{
- display: inline-block;
- width: 100%;
- border: 1px solid #333;
- padding: 20px;
- margin: 60px;
- background-color: #2b3499;
- border-radius: 10px;
- color: aliceblue;
- font-size: 30px;
- text-align: center;
- font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
- }
- 
+nav ul{
+   display: flex;
+}
+
+ul li{
+display: inline-block;
+width: 100%;
+border: 1px solid #333;
+text-align: center;
+padding: 20px;
+margin: 60px;
+
+background-color: #2b3499;
+border-radius: 10px;
+}
+
+ul select{
+display: inline-block;
+width: 100%;
+border: 1px solid #333;
+padding: 20px;
+margin: 60px;
+background-color: #2b3499;
+border-radius: 10px;
+color: aliceblue;
+font-size: 30px;
+text-align: center;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
