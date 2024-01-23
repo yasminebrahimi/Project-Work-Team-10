@@ -190,7 +190,7 @@ aside{
 .box{
     
     width: 250px;
-    height: 275px;
+    height: 290px;
 
     padding: 20px;
     margin: 10px;
@@ -221,7 +221,7 @@ aside{
 
 .longer{
     
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     list-style-type: "\2705";
 
 }
