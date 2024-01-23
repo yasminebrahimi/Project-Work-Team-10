@@ -1,0 +1,43 @@
+body{
+    font-family: 'Inter', sans-serif;
+  }
+
+
+.jounUs {
+  display: flex;
+  align-items: center; 
+  min-height: 300px; 
+  background-color: #FFD099; 
+  padding: 20px; 
+}
+
+.joinUsPic {
+  flex: 1; 
+}
+
+.joinUscat {
+  flex: 2; 
+  padding: 0 20px; 
+  color: #333;
+}
+
+
+.joinUsPic img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.joinUscat button {
+  background-color: #FF9209; 
+  color: #333; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.joinUscat button:hover {
+  background-color: #FF6C22; 
+}

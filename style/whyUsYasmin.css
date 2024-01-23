@@ -1,0 +1,38 @@
+body{
+    font-family: 'Inter', sans-serif;
+  }
+
+.whyUsSection h1{
+    background-color: #FF9209;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 3%;
+    font-size: 30px;
+    color: #333;
+}
+  .whyUs {
+    display: flex;
+    justify-content: space-around; 
+    background-color: #FF9209; 
+    padding: 20px;
+  }
+  
+  .whyUs div {
+    flex: 1; 
+    text-align: center; 
+  }
+  
+
+  .whyUs img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .whyUs h3 {
+    color: #333; 
+  }
+  
+  .whyUs p {
+    color: #333; 
+  }
+  

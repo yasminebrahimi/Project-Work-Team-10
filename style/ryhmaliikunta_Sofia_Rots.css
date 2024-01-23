@@ -1,0 +1,164 @@
+body{
+    background-color: #2b3499;
+    
+}
+/**/
+
+main{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255) ;
+}
+
+.container1{
+    
+    display: flex;
+    border: 1px solid #ff9209;
+    background-color: #ffd099;
+    font-size: 35px;
+    color: #2b3499;
+       
+}
+
+
+
+
+.container1 img{
+    float: left;
+    width: 50%;
+}
+
+.container2{
+    display: flex;
+    border: 1px solid #ff9209;
+    background-color: #ffd099;
+    font-size: 35px;
+}
+.container2 img{
+    width: 100%;
+}
+
+.container2 button{
+   font-size: 30px;
+   margin: 30px;  
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 40px;
+}
+
+
+.three{
+    font-size: 40px;
+    background-color: #ff9209;
+    border: 1px solid #ff9209;
+    margin: 50px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    display: inline-block;
+    
+}
+.three:hover{
+    transform: scale(1.1);
+}
+
+
+article section{
+    width: 100%;
+}
+section div{
+    width: 100%;
+}
+.side{
+    float: left;
+    width: 100%; 
+}
+.side2{
+    text-align: center;
+    font-size: 60px;
+   
+}
+.side2 button{
+    font-size: 30px;
+    margin: 30px;  
+ }
+
+.otsikko{
+    display: flex;
+    direction: colum;
+    color: aliceblue;
+    float: inline-end;
+    margin: 40px;
+    
+}
+h3{
+    width: 50%;
+    font-size: 40px;
+}
+h4{
+    font-size: 40px;
+}
+.color{
+    background-color: #ff9209 !important;
+
+}
+
+header{
+     color: aliceblue;
+    background-color: #ff6c22;
+    font-size: 30px;
+    text-decoration: dotted;
+    padding: 0.5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+    
+ }
+ 
+ header img {
+    float: left;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    
+  }
+
+
+ nav ul{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ ul li{
+ display: inline-block;
+ width: 100%;
+ border: 1px solid #333;
+ padding: 30px;
+ text-align: center;
+ margin: 60px;
+ background-color: #2b3499;
+ border-radius: 10px;
+ }
+
+ ul select{
+ display: inline-block;
+ width: 100%;
+ border: 1px solid #333;
+ padding: 20px;
+ margin: 60px;
+ background-color: #2b3499;
+ border-radius: 10px;
+ color: aliceblue;
+ font-size: 30px;
+ text-align: center;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ }
+ 
+
