@@ -1,20 +1,33 @@
 # Project-Work-Team-10
+ Building a Static Website Module - Project Work - Team 10
 
-Building a Static Website Module - Project Work - Team 10
 
-#Ryhmän jäsenet:
-//Sonja Lahti, Sofia Rots, and Yasmin Ebrahimi
+### Team members: 
+- Sonja Lahti
+- Sofia Rots
+- Yasmin Ebrahimi
 
-//About my website:
-link to figma
 
-//Sonja Lahti:
+### About our project: 
 
-// Sofia Rots:
 
-//Yasmin Ebrahimi:
 
-- Made folders:  
-  Assets file for images and etc.
-  Style file for CSS sheet
-  and html file named index.
+### Documention:
+- Sonja Lahti 
+- Sofia Rots
+- Yasmin Ebrahimi 
+
+12.1: 
+Pull and push on github 
+We brainstormed the basic ideas of web design
+and also we chose the color of the website. 
+
+
+
+
+
+
+
+
+
+
