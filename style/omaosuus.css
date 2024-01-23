@@ -1,5 +1,10 @@
+
+
+
+/*Sonjan osuus alkaa!!!!!!*/
 body{
     background-color: #2B3499 !important;
+    font-family: 'Inter', sans-serif;
     }
 
     header{
@@ -69,8 +74,98 @@ body{
     .link-top-img:hover{
         background-color: #FF9209;
     }
+    /*Sonjan osuus katkeaa---------------*/
+   
+   
+   
+   
+    /* Yasminen Why us alkaa---*/
+    
+.whyUsSection h1{
+  background-color: #FF9209;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 3%;
+  font-size: 30px;
+  color: #333;
+}
+.whyUs {
+  display: flex;
+  justify-content: space-around; 
+  background-color: #FF9209; 
+  padding: 20px;
+}
 
-h2{
+.whyUs div {
+  flex: 1; 
+  text-align: center; 
+}
+
+
+.whyUs img {
+  max-width: 80%;
+  height: auto;
+}
+
+.whyUs h3 {
+  color: #333; 
+}
+
+.whyUs p {
+  color: #333; 
+}
+
+
+
+
+    /*Y Why us loppuu----*/
+    /* Yasminen Join us alkaa----*/
+
+    .jounUs {
+        display: flex;
+        align-items: center; 
+        min-height: 300px; 
+        background-color: #FFD099; 
+        padding: 20px; 
+      }
+      
+      .joinUsPic {
+        flex: 1; 
+      }
+      
+      .joinUscat {
+        flex: 2; 
+        padding: 0 20px; 
+        color: #333;
+      }
+      
+      
+      .joinUsPic img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      
+      .joinUscat button {
+        background-color: #FF9209; 
+        color: #333; 
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      .joinUscat button:hover {
+        background-color: #FF6C22; 
+      }
+      
+
+
+
+    /*Y Join us loppuu----*/
+
+.h2_sonja{
     text-align: center;
         padding: 25px;
         border: 4px solid #FF9209;
@@ -138,10 +233,64 @@ h2{
         height:200px;
     }
 
-    footer{
-    background-color:#FF6C22;
-    border: 2px solid #FF6C22;
-    text-align: center;
-    color: #FFD099;
-    
+   /*Sonjan osuus loppuu!!!!!!!!!!!!*/
+
+   /*Yasminen osuus !footer! alkaa!!!!!!!*/
+
+   /* Resetting some default styles */
+body, h1, h2, h3, p, margin, padding {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+
+  .main-footer {
+    background-color: #FF6C22; 
+    color: #333; 
+    min-height: 250px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+  }
+  
+
+
+  .textFooter {
+    flex: 2; 
+  }
+  
+  .getInTouch,
+  .links {
+    flex: 1; 
+  }
+  
+  
+  h4, h6 {
+    color: #333; 
+  }
+.hyperLinks{
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin: 5% auto;
+  }
+  
+a{
+    color: #333;
 }
+
+.cta{
+    margin-top: 3%;
+}
+
+
+
+  a:hover {
+    color: #FF6C22;
+  }
+  /* footer loppuu*/
