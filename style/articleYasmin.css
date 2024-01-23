@@ -1,0 +1,129 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF9F6;
+}
+
+
+.articleBlog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.articleBlog h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.articleBlog img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.articleBlog p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+.articleBlog strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.whyUsSection h1{
+    background-color: #FF9209;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 3%;
+    font-size: 30px;
+    color: #333;
+}
+  .whyUs {
+    display: flex;
+    justify-content: space-around; 
+    background-color: #FF9209; 
+    padding: 20px;
+  }
+  
+  .whyUs div {
+    flex: 1; 
+    text-align: center; 
+  }
+  
+
+  .whyUs img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .whyUs h3 {
+    color: #333; 
+  }
+  
+  .whyUs p {
+    color: #333; 
+  }
+
+  
+  .main-footer {
+    background-color: #FFD099; 
+    color: #333; 
+    min-height: 250px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+  }
+  
+
+
+  .textFooter {
+    flex: 2; 
+  }
+  
+  .getInTouch,
+  .links {
+    flex: 1; 
+  }
+  
+  
+  h4, h6 {
+    color: #333; 
+  }
+.hyperLinks{
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin: 5% auto;
+  }
+  
+a{
+    color: #333;
+}
+
+.cta{
+    margin-top: 3%;
+}
+
+
+
+  a:hover {
+    color: #FF6C22;
+  }
+  
+
