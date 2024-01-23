@@ -1,0 +1,147 @@
+body{
+    background-color: #2B3499 !important;
+    }
+
+    header{
+    background-color:#FF9209;
+    border: 2px solid #FF6C22;
+    }
+
+    form{
+        display: block;
+        background-color: #2B3499;
+        max-width: 300px;
+        
+        
+    }
+    .form-floating{
+        
+        background-color: #2B3499;
+        color: #2B3499;
+        margin: 10px;
+    }
+    .loginb{
+        background-color: #FF9209 ;
+        border: 2px solid #FF9209 ;
+        border-radius: 5px;
+        margin: 5px ;
+        color: #2B3499 ;
+        font-size: 20px;
+        font-weight: bold;
+    }
+        .loginb:hover{
+            background-color: #FF6C22;
+            border: 2px solid #FF6C22 ;
+        }   
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper2 {
+    position: relative;
+    text-align: center;
+    
+}
+        /* thing that puts text on top of the picture*/
+    .top-of-img2{
+        position: absolute;
+        top:50%;
+        left:40%;
+
+    }
+
+
+    .link-top-img{
+        background-color: #2B3499;
+        text-align: center;
+        border:1px solid black;
+
+        margin: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
+
+    .link-top-img:hover{
+        background-color: #FF9209;
+    }
+
+h2{
+    text-align: center;
+        padding: 25px;
+        border: 4px solid #FF9209;
+        margin: 10px;
+}
+
+    main{
+        justify-content: space-evenly;
+        background-color: #FFD099;
+        margin: 15px;
+    }
+    .info-a {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 200px;
+        justify-content: space-evenly;
+        
+        
+    }
+
+
+    .info-b{
+        width: 250px;
+        height: 190px;
+        
+        flex-wrap: wrap;
+        
+        margin: 10px;
+        padding: 0px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px; 
+
+        text-align: center;
+    }
+
+        .info-a p{
+            font-size: 20px;
+        }
+
+         /* bottom pictures*/
+        .cover{
+            width:250px;
+            height: 145px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px; 
+        }
+        .infolink{
+            text-decoration: none;
+            color: #2B3499;
+            font-weight: bold;
+        }
+        .infolink:hover{
+            color: #FF6C22;
+        }
+
+
+    .mapframe{
+        display: block;
+        text-align: center;
+        
+        
+    }
+    iframe{
+        width: 100%;
+        height:200px;
+    }
+
+    footer{
+    background-color:#FF6C22;
+    border: 2px solid #FF6C22;
+    text-align: center;
+    color: #FFD099;
+    
+}
