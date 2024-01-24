@@ -110,6 +110,7 @@ h3{
 
 
 header{
+    display: flex;
     color: aliceblue;
     background-color: #ff6c22;
     font-size: 20px;
@@ -119,7 +120,7 @@ header{
     
     
  }
- ul li, ul select{
+ ul li, ul select, .dropbtn{
     width: max-content;
     background-color: #2b3499;
     display: inline-block;

@@ -1,34 +1,22 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link rel="stylesheet" href="/style/heder_Sofia_Rots.css">
-    
-    
-</head>
-<body>
-    <header>
 
-            <ul>
-                <li><a href="../components/jasenyys.html" target="_self">Membership</a></li>
-                <li><a href="../components/blogYasmin.html" target="_self">Blog</a></li>
-                <li><a href="../components/ryhmaliikunta_Sofia_Rots.html" target="_self">Group Exercise </a></li>
-                
-                <!--Hyperlinkit pääsivuun ja footerin-->
-                <li>Location</li>
-                <li>Contact Information</li>
-                <!--aukeaa palkki, jossa on jäsenyys, kuntosali, ryhmäliikunta<-->
-                <div name="Hinnat" onchange="location = this.value;">
-                    <option value="Hinnasto">Price List</option>
-                    <option value="Jasenyys">Membership</option>
-                    <option value="../components/ryhmaliikunta_Sofia_Rots.html#table" target="_self">Group Exercise</option>
-                    <a id="table"></a>
-                    <option value="../components/ryhmaliikunta_Sofia_Rots.html#table" target="_self">Gym</option>
-                    <a id="table"></a>
+    <header>
+        <ul>
+            <li><a href="../components/jasenyys.html" target="_self">Membership</a></li>
+            <li><a href="../components/blogYasmin.html" target="_self">Blog</a></li>
+            <li><a href="../components/ryhmaliikunta_Sofia_Rots.html" target="_self">Group Exercise </a></li>
+            
+            <!--Hyperlinkit pääsivuun ja footerin-->
+            <li><a href="../components/index.html#lct" target="_self"> Location</a></li>
+            <li><a href="../components/index.html#info" target="_self"> Contact Information</a></li>
+            <!--aukeaa palkki, jossa on jäsenyys, kuntosali, ryhmäliikunta<-->
+        </ul>    
+            <div class="dropdown">
+                <button class="dropbtn">Hinnasto</button>
+                <div class="dropdown-content">
+                  <a href="#">Membership</a>
+                  <a href="../components/ryhmaliikunta_Sofia_Rots.html#tbl">Group Exercise</a>
+                  <a href="../components/ryhmaliikunta_Sofia_Rots.html#tbl">Gym</a>
                 </div>
-            </ul>
-    </header>
-</body>
-</html>
+            </div>
+        
+</header>
