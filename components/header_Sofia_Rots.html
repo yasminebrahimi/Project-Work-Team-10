@@ -10,29 +10,25 @@
 </head>
 <body>
     <header>
-        <figure >
-           
-        </figure>
-        <nav>
+
             <ul>
-                <li>Membership</li>
-                <li>Blog</li>
-                <li>Group Exercise</a></li>
+                <li><a href="../components/jasenyys.html" target="_self">Membership</a></li>
+                <li><a href="../components/blogYasmin.html" target="_self">Blog</a></li>
+                <li><a href="../components/ryhmaliikunta_Sofia_Rots.html" target="_self">Group Exercise </a></li>
+                
                 <!--Hyperlinkit pääsivuun ja footerin-->
                 <li>Location</li>
                 <li>Contact Information</li>
                 <!--aukeaa palkki, jossa on jäsenyys, kuntosali, ryhmäliikunta<-->
-                <select name="Hinnat" id="Hinnaston kategoria">
+                <div name="Hinnat" onchange="location = this.value;">
                     <option value="Hinnasto">Price List</option>
                     <option value="Jasenyys">Membership</option>
-                    <option value="Rymaliikunta">Group Exercise</option>
-                    <option value="Kuntosali">Gym</option>
-                </select>
+                    <option value="../components/ryhmaliikunta_Sofia_Rots.html#table" target="_self">Group Exercise</option>
+                    <a id="table"></a>
+                    <option value="../components/ryhmaliikunta_Sofia_Rots.html#table" target="_self">Gym</option>
+                    <a id="table"></a>
+                </div>
             </ul>
-        </nav>
-
-
-
     </header>
 </body>
 </html>

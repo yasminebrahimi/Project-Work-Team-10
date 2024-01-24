@@ -9,47 +9,45 @@
     
 </head>
 <body>
-    <header >
-        
-        <nav >
-            <ul>
-                
-                <!--Sivut-->
-                <li>Membership</li>
-                <li>Blog</li>
-                <li>Group Exercise</a></li>
-                <!--Hyperlinkit pääsivuun ja footerin-->
-                <li>Location</li>
-                <li>Contact Information</li>
-                <!--aukeaa palkki, jossa on jäsenyys, kuntosali, ryhmäliikunta<-->
-                <select name="Hinnat" id="Hinnaston kategoria">
-                    <option value="Hinnasto">Price List</option>
-                    <option value="Jasenyys">Membership</option>
-                    <option value="Rymaliikunta">Group Exercise</option>
-                    <option value="Kuntosali">Gym</option>
-                </select>
-            </ul>
-        </nav>
-    </header>
-
+    
+    <header>
+        <ul>
+            <li><a href="../components/jasenyys.html" target="_self">Membership</a></li>
+            <li><a href="../components/blogYasmin.html" target="_self">Blog</a></li>
+            <li><a href="../components/ryhmaliikunta_Sofia_Rots.html" target="_self">Group Exercise </a></li>
+            
+            <!--Hyperlinkit pääsivuun ja footerin-->
+            <li>Location</li>
+            <li>Contact Information</li>
+            <!--aukeaa palkki, jossa on jäsenyys, kuntosali, ryhmäliikunta<-->
+            
+            <div class="dropdown">
+                <button class="dropbtn">Hinnasto</button>
+                <div class="dropdown-content">
+                  <a href="#">Membership</a>
+                  <a href="../components/ryhmaliikunta_Sofia_Rots.html#table">Group Exercise</a>
+                  <a href="../components/ryhmaliikunta_Sofia_Rots.html#table">Gym</a>
+                </div>
+              </div>
+        </ul>
+</header>
     
     <main>
         <!--Osa1: Kuva + Ryhmäliikunta-->
         <section class = "container1">
-            <div>
                 <img src="../images/ryhmaliikunta.jpg" alt="ryhmaliikunta" >
-            <div><strong>
+            <div>
                 <h1>Group Exercise</h1>
                 <p>Group exercise is a great form of exercise! You get to put your brain to work and focus on what to do, while a competent guide tells you what, how and when. </p>
                 <p>With us, you exercise under the safe guidance of top experienced exercise professionals and you can find your own sports from our versatile selection.</p>
                 <p>There is room to move in our spacious group exercise facilities, and efficient ventilation ensures that there is enough air.</p>
-            </strong></div>   
             </div>
         </section>
         <!--Osa 2: tuntikuvaukset, koostuu kolmesta osasta-->
-        <article >
-            <h2>Lesson descriptions</h2>
-            <section class="container2">
+        <h2>Lesson descriptions</h2>
+        <article class="container2">
+            
+           
                 
                 <div class="three">
                     
@@ -60,7 +58,7 @@
                     <img src="../images/strongBody.jpg" alt="ryhmaliikunta"  width="400" >
                     
                     
-                    <a href="../projekt_work/Soon.html"><button class="btn btn-dark" type="button">Resolve Now!</button></a>
+                    <button class="btn btn-dark" type="button">Resolve Now!</button>
                 </div>
                 
                 <div class="three">
@@ -69,9 +67,9 @@
                     </p>
                     
                         <img src="../images/Cardio.jpg" alt="ryhmaliikunta" width="400" >
-                    
-                    
-                        <a href="../projekt_work/Soon.html"><button class="btn btn-dark" type="button">Resolve Now!</button></a>                </div>
+            
+                        <button class="btn btn-dark" type="button">Resolve Now!</button>
+                </div>
                 <div class="three">
                     <p><strong>
                         Body Care</strong>
@@ -80,8 +78,9 @@
                         <img src="../images/Kehonhuolto.jpg" alt="ryhmaliikunta" width="400" >
                    
                     
-                        <a href="../projekt_work/Soon.html"><button class="btn btn-dark" type="button">Resolve Now!</button></a>                </div>
-            </section>
+                       <button class="btn btn-dark" type="button">Resolve Now!</button>
+                </div>
+            
         </article>
         
          <!--Osa 3: Hinnasto laatikko + ryhmäliikuntakalenteri laatikko-->
@@ -90,11 +89,9 @@
         <h4 class="motsikko4">Group Exercise Calendar</h4>
         </div>
          <article class="container1">
-            <div class="side">
-
-           
             
-            <table class=" table table-striped table-hover">
+            <div class="side"> 
+            <table  id="tbl" class=" table table-striped table-hover">
                 
                 
                 <tr >
@@ -117,6 +114,7 @@
                     <td>Monthly(30days)</td>
                     <td>95€</td>
                 </tr>
+            
         
             </table>
             <table class="table table-striped">
@@ -130,20 +128,13 @@
                 </tr>
             </table>
             </div>
+                <div class="side2">
+                    <p><strong>Hämeenlinna </strong><button class="btn btn-secondary">Calendar</button></p>
+                    <p><strong>Tampere</strong><button class="btn btn-secondary">Calendar</button></p>
+                    <p><strong>Helsinki</strong><button class="btn btn-secondary" >Calendar</button></p>
 
-            <section class="side2">
-                
-                
-                    <p><strong>Hämeenlinna <a href="../projekt_work/Soon.html"></strong><button class="btn btn-secondary" class="btn btn-primary bt" href="">Calendar</button></a></p>
-                    <p><strong>Tampere</strong> <a href="../projekt_work/Soon.html"></strong><button class="btn btn-secondary" class="btn btn-primary bt" href="">Calendar</button></a></p>
-                    <p><strong>Helsinki</strong> <a href="../projekt_work/Soon.html"></strong><button class="btn btn-secondary" class="btn btn-primary bt" href="">Calendar</button></a></p>
-                
-                
-                <a href="../projekt_work/Soon.html"><button class="btn btn-dark" type="button" target="_blank" >Resolve</button></a>
-
-                <!--<a class="btn btn-primary" href="#" role="button">Link</a>'
-                    <button type="button" class="btn btn-primary btn-lg">Large button</button>'-->
-            </section>
+                <button class="btn btn-dark" target="_blank" >Resolve</button>
+                </div>
         </article>
 
     </main>
