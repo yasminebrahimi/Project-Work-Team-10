@@ -8,8 +8,8 @@
 - Yasmin Ebrahimi
 
 
-### About our project: 
-
+### Project Overview:
+Our project revolves around a gym website with locations in three different areas. The gym provides a variety of services and classes to cater to diverse preferences. 
 
 
 ### Documention:
@@ -17,10 +17,7 @@
 - Sofia Rots
 - Yasmin Ebrahimi 
 
-12.1: 
-Pull and push on github 
-We brainstormed the basic ideas of web design
-and also we chose the color of the website. 
+
 
 
 
