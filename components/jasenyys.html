@@ -9,16 +9,32 @@
 
 </head>
 <body>
-    <header>
-        <h1>Gym</h1>
+        <header>
+        <figure >
+           
+        </figure>
+        <nav>
+            <ul>
+                <li>Membership</li>
+                <li>Blog</li>
+                <li>Group Exercise</a></li>
+                <!--Hyperlinkit pääsivuun ja footerin-->
+                <li>Location</li>
+                <li>Contact Information</li>
+                <!--aukeaa palkki, jossa on jäsenyys, kuntosali, ryhmäliikunta<-->
+                <select name="Hinnat" id="Hinnaston kategoria">
+                    <option value="Hinnasto">Price List</option>
+                    <option value="Jasenyys">Membership</option>
+                    <option value="Rymaliikunta">Group Exercise</option>
+                    <option value="Kuntosali">Gym</option>
+                </select>
+            </ul>
+        </nav>
+
+
+
     </header>
-    <nav>
-        <ul class="navlink">
-            <li ><a href="#" >Membership</a></li> 
-            <li><a href="#" class="navlink">ryhmäliikunta</a></li> 
-            <li><a href="#" class="navlink">mitäikinä</a></li>
-        </ul> 
-    </nav>
+  
     <form method="post" action="#">
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -41,30 +57,30 @@
 
     <div class="back_us">
 
-        <h2>Which membership to choose?</h2>
+        <h2 class="h2-sonja">Which Membership to Choose?</h2>
     <div class="about_us">
         
         <div class="why_us"><p ><strong>Our gym is</strong>  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
              Officiis dolor aliquam fugiat nostrum magni consectetur cum consequuntur 
              laborum, commodi tenetur numquam optio
              in a dolores ratione cupiditate est, unde pariatur.</p>
-             <ul class="us_ul">
+             <ol class="us_ul">
                 <li class="us_li">Reason</li>
                 <li class="us_li">Second</li>
                 <li class="us_li">Thrid</li>
                 <li class="us_li">Fourth</li>
-            </ul></div> 
+             </ol></div> 
         
         <div class="why_us"><p> <strong> We also offer</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
              Ratione iusto ducimus optio quaerat voluptatibus sunt vero voluptate
             provident impedit tempore odit minima, 
             ipsa veritatis ullam voluptatum veniam excepturi et dolor voluptatibus sunt vero.</p>
-            <ul class="us_ul">
+            <ol class="us_ul">
                 <li class="us_li">Reason</li>
                 <li class="us_li">Second</li>
                 <li class="us_li">Thrid</li>
                 <li class="us_li">Fourth</li>
-            </ul></div> 
+            </ol></div> 
     </div> 
     </div>
 
@@ -72,33 +88,16 @@
         
 <main>          
     
-        <aside>
-            <h2>Article</h2>
-    
-            <img src="/../images/dumbbells.jpg" alt="Picture of small pyramid of dumbbells and sneakers next to them." class="cover2">
-    
-            <p>There are certain sit amet consectetur adipisicing elit. Odit, 
-                labore quas provident similique iusto ullam ratione atque quam 
-                blanditiis recusandae vel optio illo consequuntur quaerat?
-                 Explicabo iusto temporibus officia quo.
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                 Magnam repudiandae natus laboriosam doloribus, illum enim maxime? 
-                 Eligendi quam deleniti mollitia cumque aliquam tenetur
-                cum perspiciatis odio iure consequatur! Optio, perferendis.
-            </p>
-               
-        
-        
-        </aside>
+     
      <div class="boxbox">  
         <div class="box">
             <p class="p1">Student Membership</p>
             <p class="p2">59,90€ /month</p>
 
-            <ul class="shorter">
-                <li>Gym</li>
-                <li>Group Exercize</li>
-            </ul>
+            <ol class="shorter">
+                <li class="membership">Gym</li>
+                <li class="membership">Group Exercize</li>
+            </ol>
             <p ><a href="#" class="p-a"> Join now!</a></p>
         </div>
             
@@ -107,21 +106,21 @@
             <p class="p2">69,90€ /month</p>
             
 
-            <ul class="shorter">
-                <li>Gym</li>
-                <li>Group Exercize</li>
-            </ul>
+            <ol class="shorter">
+                <li class="membership">Gym</li>
+                <li class="membership">Group Exercize</li>
+            </ol>
             <p ><a href="#" class="p-a"> Join now!</a></p>
         </div>
         <div class="box">
             <p class="p1">Basic+ Membership</p>
             <p class="p2">85,90€/month</p>
             
-            <ul class="longer">
-                <li>Gym</li>
-                <li>Group Exercize</li>
-                <li>kaikki kuntosalit</li>
-            </ul>
+            <ol class="longer">
+                <li class="membership">Gym</li>
+                <li class="membership">Group Exercize</li>
+                <li class="membership">kaikki kuntosalit</li>
+            </ol>
             <p><a href="#" class="p-a"> Join now!</a></p>
         </div>
 
@@ -129,10 +128,10 @@
             <p class="p1">Membership for Retirees</p>
             <p class="p2">55,90€ /month</p>
 
-            <ul class="shorter">
-                <li>Gym</li>
-                <li>Group Exercize</li>
-            </ul>
+            <ol class="shorter">
+                <li class="membership">Gym</li>
+                <li class="membership"> Group Exercize</li>
+            </ol>
             <p><a href="#" class="p-a"> Join now!</a></p>
         </div>
 
@@ -140,22 +139,22 @@
             <p class="p1">Yearly membership</p>
             <p class="p2">699€ /year</p>
 
-            <ul class="shorter">
-                <li>Gym</li>
-                <li>Group Exercize</li>
-            </ul>
+            <ol class="shorter">
+                <li class="membership">Gym</li>
+                <li class="membership">Group Exercize</li>
+            </ol>
             <p><a href="#" class="p-a"> Join now!</a></p>
         </div>
         <div class="box">
             <p class="p1">One time visit payment</p>
             <p class="p2">29,90€ /visit</p>
 
-            <ul class="longer">
-                <li>Gym</li>
+            <ol class="longer">
+                <li class="membership">Gym</li>
                 <li class="dot">tai</li>
-                <li>Group Exercize</li>
+                <li class="membership">Group Exercize</li>
                 
-            </ul>
+            </ol>
             <p><a href="#" class="p-a"> Join now!</a></p>
         </div>
     </div> 
@@ -171,7 +170,8 @@
                     Magnam repudiandae natus laboriosam doloribus, illum enim maxime? 
                     Eligendi quam deleniti mollitia cumque aliquam tenetur
                     cum perspiciatis odio iure consequatur! </p>
-                    <img src="../images/crunches.jpg" alt="Woma doing abdomnal crunches."  class="crunchimg"></div>
+                  <div class="pic-border">  <img src="../images/crunches.jpg" alt="Woma doing abdomnal crunches."  class="crunchimg"></div>
+                </div>
         </div> 
 
         <div class="botli2">
@@ -201,16 +201,39 @@
         
     </div>  
 </main>
-    <footer>
-        <h2>FooterFooterFooterFooter</h2>
-        <p>FooterFooterFooterFooter</p>
-        <p>FooterFooterFooterFooter</p>
-        <p>FooterFooterFooterFooter</p>
-        <p>FooterFooterFooterFooter</p>
-        <p>FooterFooterFooterFooter</p>
-        <p>FooterFooterFooterFooter</p>
-        
-    </footer>
+<footer class="main-footer">
+    <div class="container footer">
+        <div class="textFooter">
+            <h4>Discover x Gym</h4>
+            <p> Transform yourself with our top-notch facilities, 
+                expert trainers, and diverse classes. Join us in the
+                 pursuit of wellness – your goals, our commitment.</p>
+                 <p class="cta">Ready to start your fitness journey? <a href="">Join Now!</a></p>
+        </div>
+   
+      <div class="getInTouch">
+        <h4>Get in Touch</h4>
+        <a class="hyperLinks" href="">123 Fittness Street, Cityville</a>
+        <a class="hyperLinks" href="">+358 567 4786</a>
+        <a class="hyperLinks" href="mailto:info@example.com">info@example.com</a>
+        <div class="social-icons">
+        <a href="https://facebook.com/examplegym" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/examplegym" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/examplegym" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+        <div class="links">
+            <h4>Links</h4>
+            <a class="hyperLinks" href="#">FAQ</a>
+            <a class="hyperLinks" href="#">Team & conditions</a>
+            <a class="hyperLinks" href="#">Reporting</a>
+            <a class="hyperLinks" href="#">Privacy</a>
+        </div>
+       
+      </div>
+     
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
