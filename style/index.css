@@ -1,0 +1,338 @@
+
+/*Sofian osuus alkaa-----*/
+
+header{
+  color: aliceblue;
+  background-color: #ff6c22;
+  text-decoration: dotted;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+nav ul{
+  display: flex;
+}
+
+ul li{
+  display: inline-block;
+  width: 100% ;
+  border: 1px solid #333;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #2b3499;
+
+}
+
+ul select{
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 15px;
+  background-color: #2b3499;
+  color: aliceblue;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Sofian osuus loppuu---*/
+
+/*Sonjan osuus alkaa!!!!!!*/
+body{
+    background-color: #2B3499 !important;
+    font-family: 'Inter', sans-serif;
+    }
+
+
+    form{
+        display: block;
+        background-color: #FF6C22;
+        max-width: 300px;
+        
+        
+    }
+    .form-floating{
+        
+        background-color: #FF6C22;
+        color: #2B3499;
+        margin: 10px;
+    }
+    .loginb{
+        background-color: #2B3499 ;
+        border: 2px solid #2B3499 ;
+        border-radius: 5px;
+        margin: 5px ;
+        color: aliceblue ;
+        font-size: 20px;
+        
+        font-family: 'Inter', sans-serif;
+    }
+        .loginb:hover{
+            background-color: #FF9209;
+            border: 2px solid #FF6C22 ;
+        }   
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper2 {
+    position: relative;
+    text-align: center;
+    
+}
+        /* thing that puts text on top of the picture*/
+    .top-of-img2{
+        position: absolute;
+        top:50%;
+        left:40%;
+
+    }
+
+
+    .link-top-img{
+        background-color: #2B3499;
+        text-align: center;
+        border:1px solid black;
+
+        margin: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        color: aliceblue;
+       
+    }
+
+    .link-top-img:hover{
+        background-color: #FF9209;
+    }
+    /*Sonjan osuus katkeaa---------------*/
+   
+   
+   
+   
+    /* Yasminen Why us alkaa---*/
+    
+.whyUsSection h1{
+  background-color: #FF9209;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 3%;
+  font-size: 30px;
+  color: #333;
+}
+.whyUs {
+  display: flex;
+  justify-content: space-around; 
+  background-color: #FF9209; 
+  padding: 20px;
+}
+
+.whyUs div {
+  flex: 1; 
+  text-align: center; 
+}
+
+
+.whyUs img {
+  max-width: 80%;
+  height: auto;
+}
+
+.whyUs h3 {
+  color: #333; 
+}
+
+.whyUs p {
+  color: #333; 
+}
+
+
+
+
+    /*Y Why us loppuu----*/
+    /* Yasminen Join us alkaa----*/
+
+    .jounUs {
+        display: flex;
+        align-items: center; 
+        min-height: 300px; 
+        background-color: #FFD099; 
+        padding: 20px; 
+      }
+      
+      .joinUsPic {
+        flex: 1; 
+      }
+      
+      .joinUscat {
+        flex: 2; 
+        padding: 0 20px; 
+        color: #333;
+      }
+      
+      
+      .joinUsPic img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      
+      .joinUscat button {
+        background-color: #FF9209; 
+        color: #333; 
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      .joinUscat button:hover {
+        background-color: #FF6C22; 
+      }
+      
+
+
+
+    /*Y Join us loppuu----*/
+
+    /* Sonjan osuus jatkuu----*/
+.h2_sonja{
+    text-align: center;
+        padding: 25px;
+        color: #2B3499;
+        margin: 10px;
+}
+
+    main{
+        justify-content: space-evenly;
+        background-color: #FF9209;
+        margin: 0px;
+    }
+    .info-a {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 200px;
+        justify-content: space-evenly;
+        
+        
+    }
+
+
+    .info-b{
+        width: 250px;
+        height: 190px;
+        
+        flex-wrap: wrap;
+        
+        margin: 10px;
+        padding: 0px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px; 
+
+        text-align: center;
+    }
+
+        .info-a p{
+            font-size: 20px;
+        }
+
+         /* bottom pictures*/
+        .cover{
+            width:250px;
+            height: 145px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px; 
+        }
+        .infolink{
+            text-decoration: none;
+            color: #2B3499;
+            font-weight: bold;
+        }
+        .infolink:hover{
+            color: #FF6C22;
+        }
+
+
+    .mapframe{
+        display: block;
+        text-align: center;
+        
+        
+    }
+    iframe{
+        width: 100%;
+        height:200px;
+    }
+
+   /*Sonjan osuus loppuu!!!!!!!!!!!!*/
+
+   /*Yasminen osuus footer alkaa!!!!!!!*/
+
+   /* Resetting some default styles */
+body, h1, h2, h3, p, margin, padding {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+
+  .main-footer {
+    background-color: #FF6C22; 
+    color: #333; 
+    min-height: 250px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+  }
+  
+
+
+  .textFooter {
+    flex: 2; 
+  }
+  
+  .getInTouch,
+  .links {
+    flex: 1; 
+  }
+  
+  
+  h4, h6 {
+    color: #333; 
+  }
+.hyperLinks{
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin: 5% auto;
+  }
+  
+a{
+    color: #333;
+}
+
+.cta{
+    margin-top: 3%;
+}
+
+
+
+  a:hover {
+    color: #FF6C22;
+  }
+  /* footer loppuu*/
