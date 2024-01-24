@@ -1,45 +1,67 @@
 
 /*Sofian osuus alkaa-----*/
-
 header{
+  display: flex;
   color: aliceblue;
   background-color: #ff6c22;
+  font-size: 20px;
   text-decoration: dotted;
-  font-family: 'Inter', sans-serif;
+  padding: 1px;
+  
+  
+  
 }
-
-
-
-nav ul{
-  display: flex;
-}
-
-ul li{
+ul li, ul select, .dropbtn{
+  width: max-content;
+  background-color: #2b3499;
   display: inline-block;
-  width: 100% ;
-  border: 1px solid #333;
+  padding: 11px;
+  margin: 10px;
   text-align: center;
-  padding: 10px;
-  margin: 15px;
-  border-radius: 10px;
-  font-size: 15px;
-  background-color: #2b3499;
-
-}
-
-ul select{
-  display: inline-block;
-  width: 100%;
   border: 1px solid #333;
-  padding: 10px;
-  margin: 15px;
-  background-color: #2b3499;
+  border-radius: 10px;
   color: aliceblue;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 10px;
-  font-family: 'Inter', sans-serif;
 }
+ul a{
+  color: aliceblue;
+}
+
+.dropbtn {
+  background-color: #2b3499;
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #2b3499;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #2b3499;}
+
 
 
 /* Sofian osuus loppuu---*/
