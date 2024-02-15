@@ -39,7 +39,7 @@ if ($connection->connect_error) {
 
 
 
-$sql = "INSERT INTO comments (Name, Email, Comment) VALUES ('$Name','$Email','$Comment')"; 
+$sql = "INSERT INTO comments (Name, Emai, Comment) VALUES ('$Name','$Email','$Comment')"; 
 $stmt = mysqli_query($connection, $sql);
 
     if ($connection->query($sql) === TRUE)
@@ -56,3 +56,5 @@ $stmt = mysqli_query($connection, $sql);
 <a href="./article.html">
 <input type ="button" value="Go back">
 </a>
+
+
