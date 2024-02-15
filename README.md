@@ -16,7 +16,7 @@ We chose to make a 4-page document. We worked on the main page together, splitti
 Below are the tasks assigned to each member:
 
 #### Sonja Lahti:
-- ryhmäliikunta page
+-Jäsenyys sivu
 - index-form
 - kuva
 - linkki kuvan päälle
@@ -26,7 +26,7 @@ Below are the tasks assigned to each member:
 
 #### Sofia Rots: 
 - Header
-- Jäsenyys page
+-  ryhmäliikunta page
 - soon page
 
 #### Yasmin Ebrahimi: 
