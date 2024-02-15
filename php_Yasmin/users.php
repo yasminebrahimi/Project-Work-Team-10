@@ -20,10 +20,11 @@ if (isset($_POST["Comment"])) {
 }
 
 
+
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try{
-    $yhteys=mysqli_connect("localhost", "trtkp23_10", "4KHaquUZ", "web_trtkp23_10");
+    $connection=mysqli_connect("localhost", "trtkp23_10", "4KHaquUZ", "web_trtkp23_10");
 }
 catch(Exception $e){
     header("Location:../html/yhteysvirhe.html");
