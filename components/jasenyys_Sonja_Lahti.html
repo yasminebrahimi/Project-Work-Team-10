@@ -32,18 +32,73 @@
 </header>
 
   <!-- Sonja-->
-    <form method="post" action="#">
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <button type="submit" class="loginb">Login</button>
-    </form>
-
+  <form method="post" action="../php_sonja/tarkistakirjautuminen.php">
+    <div class="form-floating mb-3">
+        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" name="salasana" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <button type="submit" class="loginb">Login</button>
+</form>
+    <button class="loginb" onclick="myFunction()">Register</button>
+    <div id="myDIV"><h2>Register:</h2>
+   
+    
+        <form id="rekisteroitymislomake_sonja" method="post" action="../php_sonja/rekisteroitymislomake_sonja.php" >
+            <section class="form-floating mb-3">
+                <input type="text" name="etunimi" class="form-control"  id="floatingInput" placeholder="Firstname" required>
+                <label for="floatingInput">Firstname</label>
+            
+            </section>
+    
+            <section class="form-floating">
+                <input type="text" name="sukunimi"  class="form-control"  id="floatingInput" placeholder="Surname" required>
+                <label for="floatingSurname">Surname</label>
+            
+            </section>
+            
+            <div id="myDIV" class="form-floating mb-3">
+                <input type="email" name="email"  class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="FloatingEmail">Email address</label>
+              </div>
+          
+            <section class="form-floating">
+                <input type="text" name="osoite"  class="form-control"  id="floatingInput" placeholder="Katuosoite 1 a 1" required>
+                <label for="FloatingAddress"> Home address</label>
+            
+            </section>
+    
+            <section class="form-floating">
+                <input type="text" name="postinro"  class="form-control"  id="floatingInput" placeholder="00100" required>
+                <label for="FloatinPostn"> Postal number</label>
+            
+            </section>
+    
+            <section class="form-floating">
+                <input type="text" name="postitmp"  class="form-control"  id="floatingInput" placeholder="Kaupunki" required>
+                <label for="FloatingCity">City you live in</label>
+            
+            </section>
+    
+            <section class="form-floating">
+                <input type="text" name="puhelinnro"  class="form-control"  id="floatingInput" placeholder="0401234567" required>
+                <label for="FloatingNumber">Phone number</label>
+            
+            </section>
+            
+            
+         <section class="form-floating">
+                <input type="password" name="salasana"  class="form-control" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password">
+                <label for="floatingPassword"> Password</label>
+          
+            </section>
+            <button type="submit" name="register" class="loginb" id="register">Submit</button>
+        </form>
+    </div>
   
     <div class="wrapper">
        <div > <img src="../images/twowomenExercising.jpg" alt="Picture of a woman with barbell." class="cover">
