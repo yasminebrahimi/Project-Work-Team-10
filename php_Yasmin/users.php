@@ -3,7 +3,7 @@
 if (isset($_POST["Name"])) {
     $Name = $_POST["Name"];
 } else {
-    header("Location: article.html");
+    header("Location: ./article.html");
     exit;
 }
 
@@ -48,6 +48,6 @@ $stmt = mysqli_query($connection, $sql);
     }
 
 ?>
-<a href="article.html">
+<a href="./article.html">
 <input type ="button" value="Go back">
 </a>
