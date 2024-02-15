@@ -48,6 +48,6 @@ $stmt = mysqli_query($connection, $sql);
     }
 
 ?>
-<a href="">
+<a href="article.html">
 <input type ="button" value="Go back">
 </a>
