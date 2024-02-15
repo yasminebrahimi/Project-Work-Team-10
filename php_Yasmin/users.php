@@ -21,17 +21,7 @@ if (isset($_POST["Comment"])) {
 
 
 
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-try{
-    $connection=mysqli_connect("localhost", "trtkp23_10", "4KHaquUZ", "web_trtkp23_10");
-}
-catch(Exception $e){
-    header("Location:../html/yhteysvirhe.html");
-    exit;
-}
-
-
+require_once('db_connect.php');
 
 
 $sql = "INSERT INTO comments (Name, Email, Comment) VALUES ('$Name','$Email','$Comment')"; 
