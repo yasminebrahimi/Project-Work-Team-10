@@ -3,7 +3,7 @@
 $servername = "localhost"; 
 $username = "trtkp23_10"; 
 $password = "4KHaquUZ"; 
-$database = "web_trtk23_10"; 
+$database = "web_trtkp23_10"; 
 
 
 
