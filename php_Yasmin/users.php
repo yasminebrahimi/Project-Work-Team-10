@@ -1,18 +1,5 @@
 <?php
 
-
-
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-try{
-    $connection=mysqli_connect("localhost", "trtkp23_10", "4KHaquUZ", "web_trtkp23_10");
-}
-catch(Exception $e){
-    header("Location:../html/yhteysvirhe.html");
-    exit;
-}
-
-
 if (isset($_POST["Name"])) {
     $Name = $_POST["Name"];
 } else {
@@ -31,6 +18,19 @@ if (isset($_POST["Comment"])) {
 } else {
     $Comment = "";
 }
+
+
+
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+try{
+    $connection=mysqli_connect("localhost", "trtkp23_10", "4KHaquUZ", "web_trtkp23_10");
+}
+catch(Exception $e){
+    header("Location:../html/yhteysvirhe.html");
+    exit;
+}
+
 
 
 
