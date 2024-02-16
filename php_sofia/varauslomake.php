@@ -4,23 +4,23 @@ if (isset($_SESSION['userName'])) {
     echo "Your session is running " . $_SESSION['userName'];
 }
 
-// Check if the form is submitted
+// Tarkistaa, onko lomake lähetetty
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    //?
+    //
     $fname = isset($_POST["fname"]) ? $_POST["fname"] : "";
     $sname = isset($_POST["sname"]) ? $_POST["sname"] : "";
     $email = isset($_POST["email"]) ? $_POST["email"] : "";
     $phn = isset($_POST["phn"]) ? $_POST["phn"] : "";
 
-    //?
+    
     $errors = [];
 
     //tarkistaa onko kohdat tyhjät
     if(empty($fname) || empty($sname) || empty($email) || empty($phn)){
         $errors[] = "All fields are required!";
     }
-    //strlen?
+    //muita rajoiteita 
     if (strlen($fname) <= 3) {
         $errors[] = "First name must have more than 3 characters";
     }
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo '<div class="alert alert-danger">' . $error . '</div>';
         }
     } else {
-        // If validation passes, store data in session and redirect to the next page
+// Jos vahvistus menee läpi, tallenna tiedot istuntoon ja ohjaa seuraavalle sivulle        
         $_SESSION['fname'] = $fname;
         $_SESSION['sname'] = $sname;
         $_SESSION['email'] = $email;
@@ -104,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="col-12">
-            <button type="submit" class="btn btn-primary" name="next_page">Jatka valitsemaan tuntia</button>
+            <button type="submit" class="btn btn-primary" name="next_page">Continue to select an hour</button>
         </div>
     </form>
 </div>

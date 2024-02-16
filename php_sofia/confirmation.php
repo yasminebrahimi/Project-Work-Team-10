@@ -22,7 +22,7 @@ $sql = "SELECT v.*, r.tunti as class_name, r.pvm, r.alkuaika, r.loppuaika
 
 $reservationDetails = mysqli_query($yhteys, $sql);
 
-// ??
+
 $reservation = mysqli_fetch_assoc($reservationDetails);
 
 
@@ -52,7 +52,7 @@ mysqli_close($yhteys);
     <h2>Reservation Details</h2>
     <div class="details">
     <?php
-    // Display reservation details
+    
     if ($reservation) {
         echo "<p>Name: {$_SESSION['fname']} {$_SESSION['sname']}</p>";
         echo "<p>Email: {$_SESSION['email']}</p>";
@@ -61,7 +61,7 @@ mysqli_close($yhteys);
         echo "<p>Date: {$reservation['pvm']}</p>";
         echo "<p>Time: {$reservation['alkuaika']} to {$reservation['loppuaika']}</p>";
 
-        // Add more details as needed
+       
     } else {
         echo "<p>No reservation details found.</p>";
     } 
