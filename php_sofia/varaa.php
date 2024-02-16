@@ -32,8 +32,8 @@
 </header>
    
     <div class="jasen">
-        <p>Oletko Jäsen?</p>
-        <p><button type="button">Joo</button><button type="button"><a href="varauslomake.php">Ei</a></button></p>
+        <p>Are you a Member? Jäsen?</p>
+        <p><button type="button">Yes</button><button type="button"><a href="varauslomake.php">No</a></button></p>
     </div>
 
     <footer class="main-footer">
