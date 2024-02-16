@@ -64,27 +64,51 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>varauslomake</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/ryhmaliikunta_Sofia_Rots.css">
+    
 </head>
+<style>
+    body{
+        background-color: #2b3499;
+    }
+    div{
+        color: #f1f1f1;
+        padding: 11px;
+        margin: 10px;
+       text-align: center;
+    }
+</style>
 
 <body>
-    <div>
-        <h2>Fill in the information of the booker</h2>
-        <form class="form-horizontal" action="./varauslomake.php" method="post">
-            <label for="fname">First Name:</label>
-            <input type="text" name="fname" value=""><br>
+<div class="container">
+    <h2>Fill in the information of the booker</h2>
+    <form class="row g-3" action="./varauslomake.php" method="post">
 
-            <label for="sname">Second Name:</label>
-            <input type="text" name="sname" value=""><br>
+        <div class="col-md-6 mb-3">
+            <label for="fname" class="form-label">First Name:</label>
+            <input type="text" class="form-control" name="fname" required>
+        </div>
 
-            <label for="email">Email:</label>
-            <input type="text" name="email" value=""><br>
+        <div class="col-md-6 mb-3">
+            <label for="sname" class="form-label">Second Name:</label>
+            <input type="text" class="form-control" name="sname" required>
+        </div>
 
-            <label for="phn">Phone Number:</label>
-            <input type="text" name="phn" value=""><br>
+        <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" name="email" required>
+        </div>
 
-            <input type="submit" name="next_page" value="Jatka valitsemaan tuntia">
-        </form>
-    </div>
+        <div class="col-md-6 mb-3">
+            <label for="phn" class="form-label">Phone Number:</label>
+            <input type="tel" class="form-control" name="phn" required>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" name="next_page">Jatka valitsemaan tuntia</button>
+        </div>
+    </form>
+</div>
+
+
    
 </html>
