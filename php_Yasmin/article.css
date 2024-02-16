@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF9F6;
+    min-height: 100vh;
+  }
+  
+  /* Styles for the main content area */
+  .articleBlog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .articleBlog h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .articleBlog img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .articleBlog p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .articleBlog strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Footer styles */
+  .textFooter {
+    flex: 2;
+  }
+  
+  .getInTouch, .links {
+    flex: 1;
+  }
+  
+  h4, h6 {
+    color: #333;
+  }
+  
+  .hyperLinks {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin: 5% auto;
+  }
+  
+  a {
+    color: #333;
+  }
+  
+  .cta {
+    margin-top: 3%;
+  }
+  
+  a:hover {
+    color: #FF6C22;
+  }
+  
+  /* Styles for the form */
+  #respond {
+    margin: 5% 10%;
+    border-top: 1px solid #FF6C22;
+  }
+  
+  #respond input[type='text'], #respond input[type='email'], #respond textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    line-height: 1.4em;
+  }
+  
+  #form {
+    margin-bottom: 30px;
+  }
+  
+  /* Share buttons */
+  .shareit {
+    position: fixed;
+    top: 150px;
+  }
+  
+  .shareit a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.75;
+    transition: opacity 0.15s linear;
+    text-decoration: none;
+  }
+  
+  .shareit a:hover {
+    opacity: 1;
+  }
+  
+  .facebook {
+    background: #3b5998;
+  }
+  
+  .twitter {
+    background: #55acee;
+  }
+  
+  .linkedin {
+    background: #0077b5;
+  }
+  
+  .reddit {
+    background: #FF4500;
+  }
+  
+  .tumblr {
+    background: #000000;
+  }
+  
+  .pinterest {
+    background: #cb2027;
+  }
+  
