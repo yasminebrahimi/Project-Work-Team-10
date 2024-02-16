@@ -5,6 +5,7 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: ../components/index.html');
 	exit;
 }
+
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try{
     $yhteys=mysqli_connect("localhost", "trtkp23_10", "4KHaquUZ", "web_trtkp23_10");
@@ -13,9 +14,9 @@ catch(Exception $e){
     header("Location:../components/virhe.html");
     exit;
 }
-// We don't have the password or email info stored in sessions, so instead, we can get the results from the database.
+// tietoja ei ole 'tallennettu sessionsiin vaan ne haetaan databasesta
 $stmt = $yhteys->prepare('SELECT id, salasana FROM sonja23015_asiakasrekisteri WHERE email = ?');
-// In this case we can use the account ID to get the account info.
+
 $stmt->bind_param('s', $_SESSION['email']);
 $stmt->execute();
 $stmt->bind_result($password, $email);
@@ -28,7 +29,7 @@ $stmt->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="../css/jasenyys_sonja_lahti.css">
+    <link rel="stylesheet" href="../style/jasenyys_sonja_lahti.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
@@ -51,7 +52,7 @@ $stmt->close();
 
     <header>
         <ul>
-            <li><a href="../components/jasenyys.html" target="_self">Membership</a></li>
+            <li><a href="../components/jasenyys_Sonja_Lahti.html" target="_self">Membership</a></li>
             <li><a href="../components/blogYasmin.html" target="_self">Blog</a></li>
             <li><a href="../components/ryhmaliikunta_Sofia_Rots.html" target="_self">Group Exercise </a></li>
             

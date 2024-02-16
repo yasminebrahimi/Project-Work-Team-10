@@ -1,10 +1,12 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$initials=parse_ini_file(".ht.asetukset.ini");
 try{
-    $yhteys=mysqli_connect("localhost", "trtkp23_10", "4KHaquUZ", "web_trtkp23_10");
+    $yhteys=mysqli_connect($initials["databaseserver"], $initials["username"], $initials["password"], $initials["database"]);
+    
 }
 catch(Exception $e){
-    header("Location:../html2/virhe_sonja.html");
+    header("Location:../components/virhe_sonja.html");
     exit;
 }
 
@@ -17,7 +19,7 @@ if (!isset($_POST['etunimi'],$_POST['sukunimi'], $_POST['email'], $_POST['osoite
 
 
 
-// Make sure the submitted registration values are not empty.
+// Varmistaa, että täytettävät alueet on täytte
 if (empty($_POST['etunimi']) ) {
 	exit('etunimi');
    // header("Location:../html2/jasenyys_sonja.html");
@@ -46,14 +48,15 @@ if(empty($_POST['salasana'])){
 }
 
 
-    //testaa onko säpolla ja käyttäjä olemassa
+    //testaa onko säpolla olemassa
 if ($stmt = $yhteys->prepare('SELECT id, salasana, etunimi FROM sonja23015_asiakasrekisteri WHERE email = ?')) {
     //tarkastaa, että kyseessä on oikeasti email
         if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             exit('Email is not valid!');
         }
         if (strlen($_POST['salasana']) > 20 || strlen($_POST['salasana']) < 5) {
-            exit('Password must be between 5 and 20 characters long!');
+            $viesti2='Password must be between 5 and 20 characters long!';
+            echo($viesti2);
         }
 
         $stmt->bind_param('s', $_POST['email']);
@@ -61,10 +64,11 @@ if ($stmt = $yhteys->prepare('SELECT id, salasana, etunimi FROM sonja23015_asiak
         $stmt->store_result();
     
         if ($stmt->num_rows > 0) {
-            // Username already exists
-            echo 'You already have account, please login!';
+            // Ja jos käyttäjä on jo olemassa 
+            $viesti3='You already have account, please login!';
+            echo ($viesti3);
         } else {
-
+            //jos sähköpostia ei löydy luodaan uusi tili
     if ($stmt = $yhteys->prepare('INSERT INTO sonja23015_asiakasrekisteri (  etunimi, sukunimi, email, osoite, postinro, postitmp, puhelinnro, salasana ) VALUES (?, ?, ?, ?, ?, ?, ? ,?)')) {   
 
 
@@ -73,17 +77,17 @@ if ($stmt = $yhteys->prepare('SELECT id, salasana, etunimi FROM sonja23015_asiak
             $etunimi='etunimi';
             $stmt->bind_param('ssssisis',$_POST['etunimi'], $_POST['sukunimi'],$_POST['email'], $_POST['osoite'], $_POST['postinro'], $_POST['postitmp'], $_POST['puhelinnro'], $password);
             $stmt->execute();
-            echo'Sinut on rekisteröity!';
+            header("Location:../components/index.html");
            
             // header('Location: ../phplogin/index.html');
     } else {
-// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all three fields.
+// jos sql statementissa on ongelma
 echo 'Could not prepare statement!';
     }
         }
         $stmt->close();
 } else {
-	// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all 3 fields.
+	// jos sql statementissa on ongelma
 	echo 'Could not prepare statement!';
 }
 $yhteys->close();
