@@ -1,7 +1,6 @@
 <?php
-// We need to use sessions, so you should always start sessions using the below code.
 session_start();
-// If the user is not logged in redirect to the login page...
+// Jos käyttäjä ei ole kirjautunut, ohjataan etusivulle.
 if (!isset($_SESSION['loggedin'])) {
 	header('Location:../components/index.html');
 	exit;
@@ -12,7 +11,7 @@ if (!isset($_SESSION['loggedin'])) {
 	<head>
 		<meta charset="utf-8">
 		<title>Home Page</title>
-		<link rel="stylesheet" href="../css/jasenyys_sonja_lahti.css" >
+		<link rel="stylesheet" href="../style/jasenyys_sonja_lahti.css" >
 		
 	</head>
     <style>
@@ -51,8 +50,8 @@ if (!isset($_SESSION['loggedin'])) {
 	<body class="loggedin">
 		<section class="profkirj">
 			<div class="kotyl">
-				<a href="../php2/profiili.php" class="p-a"><i></i>Profile</a>
-				<a href="../php2/kirjaudu_ulos.php" class="p-a"><i></i>Logout</a>
+				<a href="../php_sonja/profiili.php" class="p-a"><i></i>Profile</a>
+				<a href="../php_sonja/kirjaudu_ulos.php" class="p-a"><i></i>Logout</a>
 			</div>
 		</section>
 		<div class="prof-content">

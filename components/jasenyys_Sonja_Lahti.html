@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="../style/jasenyys_sonja_lahti.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+
+    <style>
+        #myDIV {
+    display: none;
+    }
+  </style>
 </head>
 <body>
     <header>
         <ul>
-            <li><a href="../components/jasenyys.html" target="_self">Membership</a></li>
+            <li><a href="../components/jasenyys_Sonja_Lahti.html" target="_self">Membership</a></li>
             <li><a href="../components/blogYasmin.html" target="_self">Blog</a></li>
             <li><a href="../components/ryhmaliikunta_Sofia_Rots.html" target="_self">Group Exercise </a></li>
             
@@ -47,7 +53,7 @@
     <div id="myDIV"><h2>Register:</h2>
    
     
-        <form id="rekisteroitymislomake_sonja" method="post" action="../php_sonja/rekisteroitymislomake_sonja.php" >
+        <form id="rekisteroitymislomake_sonja" method="post" action="../php_sonja/rekisteroitymislomake_sonja.php" autocomplete="off">
             <section class="form-floating mb-3">
                 <input type="text" name="etunimi" class="form-control"  id="floatingInput" placeholder="Firstname" required>
                 <label for="floatingInput">Firstname</label>
@@ -60,10 +66,10 @@
             
             </section>
             
-            <div id="myDIV" class="form-floating mb-3">
+            <section class="form-floating mb-3">
                 <input type="email" name="email"  class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="FloatingEmail">Email address</label>
-              </div>
+              </section>
           
             <section class="form-floating">
                 <input type="text" name="osoite"  class="form-control"  id="floatingInput" placeholder="Katuosoite 1 a 1" required>
@@ -287,6 +293,16 @@
       </div>
      
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

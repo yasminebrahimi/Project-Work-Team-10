@@ -9,10 +9,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-
-
-
-
+    <style>
+          #myDIV {
+      display: none;
+  }
+    </style>
 </head>
 <body>
     <header>
@@ -67,10 +68,10 @@
             
             </section>
             
-            <div id="myDIV" class="form-floating mb-3">
+            <section class="form-floating mb-3">
                 <input type="email" name="email"  class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="FloatingEmail">Email address</label>
-              </div>
+              </section>
           
             <section class="form-floating">
                 <input type="text" name="osoite"  class="form-control"  id="floatingInput" placeholder="Katuosoite 1 a 1" required>
@@ -106,6 +107,18 @@
             <button type="submit" name="register" class="loginb" id="register">Submit</button>
         </form>
     </div>
+
+    <div class="wrapper2">
+        <div class="img-box">
+            <img src="../images/womanwithbarbell2.jpg" alt="Picture of a woman with barbell." >
+        </div>
+    
+        <div class="link-top-img1">
+            <p class="top-of-img2"><a href="jasenyys.html" class="link-top-img">JOIN NOW!</a> </p>
+        </div>
+ 
+    </div>
+
 <!-- Sonja poikki -->
 
 
@@ -224,7 +237,16 @@
              
           </footer>
 
-    
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myDIV");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

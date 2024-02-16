@@ -11,19 +11,19 @@ catch(Exception $e){
 
 
     if ( !isset($_POST['email'], $_POST['salasana']) ) {
-	    // Could not get the data that should have been sent.
+	    
 	    exit('Please fill both the email and password fields!');
     }
 
     if(!isset($_POST['salasana'])){
-        exit('Täytä salasana');
+        exit('You have to add password');
     }
 
     if ($stmt = $yhteys->prepare('SELECT id, salasana, etunimi FROM sonja23015_asiakasrekisteri WHERE email = ?')) {
-        // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
+        // Bind parameters
         $stmt->bind_param('s', $_POST['email']);
         $stmt->execute();
-        // Store the result so we can check if the account exists in the database.
+        // Tallentaa löysetyt tiedot, että voidaan tarkastaa onko kyseisellä sähköpostilla jo tili olemassa.
         $stmt->store_result();
     
         if ($stmt->num_rows > 0) {
@@ -32,28 +32,26 @@ catch(Exception $e){
             $stmt->fetch();
 
             if (password_verify($_POST['salasana'], $password)) {
-                // Verification success! User has logged-in!
-                // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
+                
+                // luo session, joka kertoo käyttäjän kirjautuneen
                 session_regenerate_id();
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['email'] = $_POST['email'];
                 $_SESSION['id'] = $id;
-    
+                //kotisivu.php ja profiili.php
                 
                 header('Location: ../php_sonja/kotisivu.php');
-                if(isset($etunimi)){
+                
                     $_SESSION['etunimi']= $etunimi;
-                    echo 'Welcome ' . $_SESSION['etunimi'] . '!';
-                }
-
-
+                
+            
             } else {
-                // Incorrect password
-                echo 'Incorrect email and/or password!';
+                // väärä salasana
+                echo 'Incorrect password!';
             }
         } else {
-            // Incorrect email
-            echo 'Incorrect email and/or password!';
+            // väärä email
+            echo 'Incorrect email!';
         }
     
         $stmt->close();

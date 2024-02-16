@@ -1,6 +1,6 @@
 <?php
 session_start();
 session_destroy();
-// Redirect to the login page:
+// palaa etusivulle
 header('Location: ../components/index.html');
 ?>
